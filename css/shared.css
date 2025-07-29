@@ -1,0 +1,138 @@
+/*-------------------- Google Font --------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*-------------------- Color Variables --------------------*/
+:root {
+    --hue-color: 230;
+    --main-color: hsl(var(--hue-color), 71%, 61%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+}
+
+/*-------------------- Base CSS Rules --------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-size: 1rem;
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-------------------- Header --------------------*/
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--body-color);
+}
+
+.nav {
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.5rem;
+    font-weight: 500;
+}
+
+.nav_logo {
+    color: var(--title-color);
+}
+
+.nav_logo:hover {
+    color: var(--main-color);
+}
+
+.nav_list {
+    display: flex;
+}
+
+.nav_link {
+    padding-left: 1rem;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--title-color);
+}
+
+.nav_link:hover {
+    color: var(--main-color);
+}
+
+/*-------------------- Footer --------------------*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 1.25rem 0;
+}
+
+.footer-container {
+    margin: 0 1.5rem;
+}
+
+.footer-title {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.footer-title,
+.footer-subtitle {
+    color: white;
+}
+
+.footer-subtitle {
+    font-size: 0.875rem;
+}
+
+/*-------------------- Media Queries --------------------*/
+/* For tablet */
+@media screen and (min-width: 768px) {
+    .nav_logo {
+        font-size: 1.5rem;
+    }
+    .nav_link {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .footer-title {
+        font-size: 1.4rem;
+    }
+
+    .footer-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+}
