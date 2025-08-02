@@ -52,7 +52,7 @@
     "name": "Loose Workwear Pants",
     "price": 80.00,
     "description": "Our 5-pocket workwear pants in a stretchy canvas fabric and loose fit through the leg, for an on-trend look. Features carpenter-style details like a hammer loop, wider belt loops, button and fly closure and back patch pockets.",
-    "image": "images/workwear-pants",
+    "image": "images/workwear-pants.avif",
     "category": "bottoms"
   },
   {
@@ -84,7 +84,7 @@
     "name": "Penny Loafers",
     "price": 168.00,
     "description": "Our sophisticated take on the classic loafer design features all of the premium features you expect from Thursday — including beautiful leather uppers, soft glove leather interiors and ultra comfortable insoles — paired with custom-developed rubber lug outsoles for an unexpected twist on the traditional design.",
-    "image": "images/loafers.webp",
+    "image": "images/loafer.webp",
     "category": "shoes"
   },
   {
