@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "name": "Cropped Linen Button-Up Shirt",
+    "price": 80.00,
+    "description": "Comfortable long-sleeve button-up shirt in our 100% linen fabric and new cropped length. Features a classic collar, left chest pocket and straight hem.",
+    "image": "images/linen-shirt.avif",
+    "category": "tops"
+  },
+  {
+    "id": 2,
+    "name": "Slim Dress Shirt",
+    "price": 70.00,
+    "description": "Our new button-up dress shirt in a textured twill stretch fabric and slim-fit silhouette, featuring a classic collar and curved hem.",
+    "image": "images/dress-shirt.avif",
+    "category": "tops"
+  },
+  {
+    "id": 3,
+    "name": "Summer Linen-Blend Polo",
+    "price": 60.00,
+    "description": "Comfortable short-sleeve polo in our new lightweight and breathable summer linen-blend fabric, that's perfect for hot sunny days. Features a classic polo collar, three-button placket and straight hem.",
+    "image": "images/polo.avif",
+    "category": "tops"
+  },
+  {
+    "id": 4,
+    "name": "Cropped Textural Plaid Button-Up Shirt",
+    "price": 60.00,
+    "description": "Comfortable short-sleeve button-up shirt in a soft textural fabric and new cropped length. Features a classic collar, on-trend plaid pattern and straight hem.",
+    "image": "images/plaid-shirt.avif",
+    "category": "tops"
+  },
+  {
+    "id": 5,
+    "name": "Baggy Jean",
+    "price": 90.00,
+    "description": "Our new baggy jeans, that are relaxed and baggy-fitting through the leg, with a slight puddle at the shoe, in our 100% cotton no-stretch fabric and broken-in denim feel. Features a medium wash and clean hem.",
+    "image": "images/baggy-jeans.avif",
+    "category": "bottoms"
+  },
+  {
+    "id": 6,
+    "name": "Ultra Baggy Jean",
+    "price": 90.00,
+    "description": "Our new ultra baggy fit jeans that sit slightly lower on the hip, and are our baggiest fit through the leg, in our 100% cotton no-stretch fabric and broken-in denim feel. Features a grey wash and clean hem.",
+    "image": "images/ultra-baggy-jeans.avif",
+    "category": "bottoms"
+  },
+  {
+    "id": 7,
+    "name": "Loose Workwear Pants",
+    "price": 80.00,
+    "description": "Our 5-pocket workwear pants in a stretchy canvas fabric and loose fit through the leg, for an on-trend look. Features carpenter-style details like a hammer loop, wider belt loops, button and fly closure and back patch pockets.",
+    "image": "images/workwear-pants",
+    "category": "bottoms"
+  },
+  {
+    "id": 8,
+    "name": "Linen Pants",
+    "price": 80.00,
+    "description": "Loose fitting pants in our soft linen-blend fabric, featuring a pull-on style waistband and hidden cellphone zip pocket.",
+    "image": "images/linen-pants.avif",
+    "category": "bottoms"
+  },
+  {
+    "id": 9,
+    "name": "Onitsuka Tiger Tokuten",
+    "price": 150.00,
+    "description": "The TOKUTEN is an alluring pair inspired by 1980s archives, reinterpreting indoor court shoes with a modern twist. Its low-profile, classic design creates a sleek and streamlined silhouette, adding an elegant touch to any look.",
+    "image": "images/onitsuka.webp",
+    "category": "shoes"
+  },
+  {
+    "id": 10,
+    "name": "Nike Dunk Low Retro",
+    "price": 120.00,
+    "description": "Created for the hardwood but taken to the streets, the Nike Dunk Low Retro returns with crisp overlays and original team colors. This basketball icon channels '80s vibes with premium leather in the upper that looks good and breaks in even better.",
+    "image": "images/dunks.png",
+    "category": "shoes"
+  },
+  {
+    "id": 11,
+    "name": "Penny Loafers",
+    "price": 168.00,
+    "description": "Our sophisticated take on the classic loafer design features all of the premium features you expect from Thursday — including beautiful leather uppers, soft glove leather interiors and ultra comfortable insoles — paired with custom-developed rubber lug outsoles for an unexpected twist on the traditional design.",
+    "image": "images/loafers.webp",
+    "category": "shoes"
+  },
+  {
+    "id": 12,
+    "name": "Star Pendant",
+    "price": 95.00,
+    "description": "Minimalist silver necklace featuring a star pendant.",
+    "image": "images/pendant.webp",
+    "category": "accessories"
+  },
+  {
+    "id": 13,
+    "name": "Star Chain",
+    "price": 85.00,
+    "description": "Minimalist silver necklace, designed to layer.",
+    "image": "images/necklace.webp",
+    "category": "accessories"
+  }
+]
