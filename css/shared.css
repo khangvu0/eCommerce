@@ -4,8 +4,8 @@
 /*-------------------- Color Variables --------------------*/
 :root {
     --main-color: #253746;
+    --secondary-color: #38546B;
     --text-color: #333333;
-    /* --body-color: #f5f3ef; */
     --body-color: #ffffff;
     --card-color: #f5f3ef;
 }
@@ -20,7 +20,7 @@
 
 html,
 body {
-    max-width: 1440px;
+    max-width: 1800px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ body {
 
 body {
     position: relative;
-    top: 3rem;
+    top: 2rem;
     background-color: var(--body-color);
     color: var(--text-color);
 }
@@ -45,7 +45,7 @@ a {
 .header {
     position: fixed;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1800px;
     top: 0;
     left: 0;
     z-index: 100;
@@ -83,7 +83,7 @@ a {
 }
 
 .nav_link:hover {
-    color: var(--main-color);
+    color: var(--secondary-color);
 }
 
 /*-------------------- Drop Down --------------------*/
