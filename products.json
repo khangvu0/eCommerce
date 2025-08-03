@@ -36,7 +36,7 @@
     "name": "Baggy Jean",
     "price": 90.00,
     "description": "Our new baggy jeans, that are relaxed and baggy-fitting through the leg, with a slight puddle at the shoe, in our 100% cotton no-stretch fabric and broken-in denim feel. Features a medium wash and clean hem.",
-    "image": "images/baggy-jeans.avif",
+    "image": "images/baggy-jeans.png",
     "category": "bottoms"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Ultra Baggy Jean",
     "price": 90.00,
     "description": "Our new ultra baggy fit jeans that sit slightly lower on the hip, and are our baggiest fit through the leg, in our 100% cotton no-stretch fabric and broken-in denim feel. Features a grey wash and clean hem.",
-    "image": "images/ultra-baggy-jeans.avif",
+    "image": "images/ultra-baggy-jeans.png",
     "category": "bottoms"
   },
   {
@@ -60,7 +60,7 @@
     "name": "Linen Pants",
     "price": 80.00,
     "description": "Loose fitting pants in our soft linen-blend fabric, featuring a pull-on style waistband and hidden cellphone zip pocket.",
-    "image": "images/linen-pants.avif",
+    "image": "images/linen-pants.png",
     "category": "bottoms"
   },
   {
@@ -68,7 +68,7 @@
     "name": "Onitsuka Tiger Tokuten",
     "price": 150.00,
     "description": "The TOKUTEN is an alluring pair inspired by 1980s archives, reinterpreting indoor court shoes with a modern twist. Its low-profile, classic design creates a sleek and streamlined silhouette, adding an elegant touch to any look.",
-    "image": "images/onitsuka.webp",
+    "image": "images/tokuten.png",
     "category": "shoes"
   },
   {
@@ -84,7 +84,7 @@
     "name": "Penny Loafers",
     "price": 168.00,
     "description": "Our sophisticated take on the classic loafer design features all of the premium features you expect from Thursday — including beautiful leather uppers, soft glove leather interiors and ultra comfortable insoles — paired with custom-developed rubber lug outsoles for an unexpected twist on the traditional design.",
-    "image": "images/loafer.webp",
+    "image": "images/loafers.png",
     "category": "shoes"
   },
   {
@@ -92,7 +92,7 @@
     "name": "Star Pendant",
     "price": 95.00,
     "description": "Minimalist silver necklace featuring a star pendant.",
-    "image": "images/pendant.webp",
+    "image": "images/pendant.png",
     "category": "accessories"
   },
   {
@@ -100,7 +100,7 @@
     "name": "Star Chain",
     "price": 85.00,
     "description": "Minimalist silver necklace, designed to layer.",
-    "image": "images/necklace.webp",
+    "image": "images/chain.png",
     "category": "accessories"
   }
 ]
