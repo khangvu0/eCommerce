@@ -32,10 +32,11 @@ function createProductCard(product) {
 
   // Use a template literal to inject the product's image, name, price, and description into the card
   card.innerHTML = `
-    <img src="../${product.image}" alt="${product.name}" />
-    <h3>${product.name}</h3>
-    <p class="price">$${product.price.toFixed(2)}</p>
-    <p class="desc">${product.description}</p>
+    <a href="detail.html?id=${product.id}">
+        <img src="../${product.image}" alt="${product.name}" />
+        <h3 class="name">${product.name}</h3>
+        <p class="price">$${product.price.toFixed(2)}</p>
+    </a>
   `;
 
   return card;
