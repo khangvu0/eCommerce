@@ -1,35 +1,45 @@
 .categories-title {
-    margin-left: 1rem;
+  margin: 1rem 1rem 0;
+  font-size: 1.25rem;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: auto auto;
-  /* gap: 0.1rem; */
-  /* padding: 1rem 0; */
+  row-gap: 1rem;
 }
 
 .product-card {
-  background-color: var(--body-color);
   border-radius: 0.5rem;
   padding: 0.5rem;
   text-align: center;
 }
 
 .product-card img {
-  width: 100%;
+  width: 196px;
+  height: 246px;
   border-radius: 0.25rem;
-  height: auto;
 }
 
-.product-card h3 {
+.product-card .name,
+.product-card .price {
+  color: var(--main-color);
+}
+
+.product-card .name {
+  text-align: left;
+  font-size: 1rem;
+  font-family: 'garamond-premier-pro';
   margin: 0.5rem 0 0.25rem;
+  font-weight: 500;
 }
 
 .product-card .price {
-  color: var(--main-color);
-  font-weight: 600;
+  font-family: 'DS Trade Gothic';
   text-align: left;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
 }
 
 .product-card .desc {
