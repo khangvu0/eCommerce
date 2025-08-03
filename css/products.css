@@ -1,6 +1,13 @@
 .categories-title {
-  margin: 1rem 1rem 0;
+  margin: 0 1rem;
   font-size: 1.25rem;
+}
+
+/* .categories-title:not(:first-of-type)  */
+#bottoms .categories-title,
+#shoes .categories-title,
+#accessories .categories-title {
+  margin-top: 1.5rem;
 }
 
 .product-grid {
