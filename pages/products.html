@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="E-commerce site featuring trendy mens clothing."/>
         <title>KHNG - Products</title>
-        <link rel="stylesheet" href="css/shared.css" />
-        <link rel="stylesheet" href="css/index.css" />
-        <script src="js/script.js" defer></script>
+        <link rel="stylesheet" href="../css/shared.css" />
+        <link rel="stylesheet" href="../css/products.css" />
+        <script src="../js/products.js" defer></script>
     </head>
     <body>
         <!------------------- HEADER ------------------->
@@ -40,10 +40,27 @@
 
         <!-------------------- MAIN -------------------->
         <main class="main">
-            <section class="heroes"></section>
-            <section class="categories"></section>
-            <section class="reviews"></section>
+            <section class="categories" id="tops">
+                <h2 class="categories-title">Tops</h2>
+                <div class="product-grid" id="tops-grid"></div>
+            </section>
+
+            <section class="categories" id="bottoms">
+                <h2 class="categories-title">Bottoms</h2>
+                <div class="product-grid" id="bottoms-grid"></div>
+            </section>
+
+            <section class="categories" id="shoes">
+                <h2 class="categories-title">Shoes</h2>
+                <div class="product-grid" id="shoes-grid"></div>
+            </section>
+
+            <section class="categories" id="accessories">
+                <h2 class="categories-title">Accessories</h2>
+                <div class="product-grid" id="accessories-grid"></div>
+            </section>
         </main>
+
         <!------------------- FOOTER ------------------->
         <footer class="footer">
             <div class="footer-container">
