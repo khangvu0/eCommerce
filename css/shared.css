@@ -5,8 +5,9 @@
 :root {
     --main-color: #253746;
     --text-color: #333333;
-    --body-color: #f5f3ef;
-    --card-color: #eae4d7;
+    /* --body-color: #f5f3ef; */
+    --body-color: #ffffff;
+    --card-color: #f5f3ef;
 }
 
 /*-------------------- Base CSS Rules --------------------*/
@@ -26,6 +27,8 @@ body {
 }
 
 body {
+    position: relative;
+    top: 3rem;
     background-color: var(--body-color);
     color: var(--text-color);
 }
