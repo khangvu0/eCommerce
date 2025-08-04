@@ -1,0 +1,133 @@
+.main {
+    margin: 0 auto;
+    padding: 0 1.5rem 2rem;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+h2, h3 {
+    margin-bottom: 0.5rem;
+}
+
+.intro {
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row label {
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 1rem;
+    display: block;
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.privacy-note {
+    font-size: 0.8rem;
+    color: #666666;
+    margin-top: 1rem;
+}
+
+.privacy-note a {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.contact-right {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1rem;
+}
+
+.talk {
+    margin-top: 2rem;
+}
+
+.help-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #111;
+  text-decoration: underline;
+}
+
+.contact-error {
+    color: red;
+    padding: 0.5rem 0;
+    font-weight: bold;
+}  
+
+.input-valid {
+    border: 1px solid green;
+}
+
+.input-invalid {
+    border: 1px solid red;
+}
+
+/*-------------------- Media Queries --------------------*/
+/* For tablet */
+@media screen and (min-width: 768px) {
+    .contact-section {
+        flex-direction: row;
+    }
+
+    .form-row div {
+        flex: 1;
+    }
+
+    .contact-right {
+        border-top: none;
+        border-left: 1px solid #e0e0e0;
+        padding-left: 2rem;
+    }
+
+    .contact-left {
+        flex: 2;
+    }
+
+    .contact-right {
+        flex: 1;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+   
+}
