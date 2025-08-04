@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="E-commerce site featuring trendy mens clothing."/>
+        <title>KHNG - Contact</title>
+        <link rel="stylesheet" href="/css/shared.css" />
+        <link rel="stylesheet" href="/css/contact.css" />
+        <script src="/js/contact.js" defer></script>
+    </head>
+    <body>
+        <!------------------- HEADER ------------------->
+        <header class="header" id="header">
+            <nav class="nav">
+                <a href="../index.html" class="nav_logo">KHNG</a>
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="../index.html" class="nav_link">Home</a>
+                        </li>
+
+                        <li class="nav_item dropdown">
+                            <a href="products.html" class="nav_link">Products</a>
+                            <ul class="dropdown_menu">
+                                <li><a href="products.html#tops" class="dropdown_item">Tops</a></li>
+                                <li><a href="products.html#bottoms" class="dropdown_item">Bottoms</a></li>
+                                <li><a href="products.html#shoes" class="dropdown_item">Shoes</a></li>
+                                <li><a href="products.html#accessories" class="dropdown_item">Accessories</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="contact.html"class="nav_link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-------------------- MAIN -------------------->
+        <main class="main">
+            <section class="contact-section">
+                <div class="contact-left">
+                    <h2>Contact Us</h2>
+                    <p class="intro">Let us know how we can help. Fill out the form and our team will get back to you shortly.</p>
+                    <form onsubmit="validate(event)" class="contact-form" id="form">
+                        <div class="form-row">
+                            <div>
+                                <label for="first-name">First name</label>
+                                <input type="text" id="first-name" name="first-name" required />
+                                <div class="contact-error" id="error-firstName"></div>
+                            </div>
+                            <div>
+                                <label for="last-name">Last name</label>
+                                <input type="text" id="last-name" name="last-name" required />
+                                <div class="contact-error" id="error-lastName"></div>
+                            </div>
+                        </div>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                        <div class="contact-error" id="error-email"></div>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <div class="contact-error" id="error-message"></div>
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select</option>
+                            <option value="USA">United States</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">United Kingdom</option>
+                        </select>
+                        <div class="contact-error" id="error-country"></div>
+
+                        <button type="submit" class="btn">Send message</button>
+                    </form>
+                    <p class="privacy-note">
+                    By submitting this form, you consent to KHNG collecting, processing, and storing your information in accordance with our <a href="#">Privacy Policy</a>.
+                    </p>
+                </div>
+
+                <div class="contact-right">
+                    <h3 class="support">Product & account support</h3>
+                    <p>Check our Help Center for quick answers to common questions.</p>
+                    <a href="#" class="help-link">Visit Help Center →</a>
+
+                    <h3 class="talk">Talk with us</h3>
+                    <p>Call us at 1-980-333-2042</a><br>Mon-Fri, 8am–6pm EST</p>
+                </div>
+            </section>
+        </main>
+
+        <!------------------- FOOTER ------------------->
+        <footer class="footer">
+            <div class="footer-container">
+                <div>
+                    <h1 class="footer-title">KHNG</h1>
+                    <span class="footer-subtitle">Rated A+ in style.</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
