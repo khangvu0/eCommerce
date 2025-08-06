@@ -1,55 +1,76 @@
 .categories-title {
-  margin: 0 1rem;
-  font-size: 1.25rem;
+    margin: 0 1rem;
+    font-size: 1.25rem;
 }
 
 /* .categories-title:not(:first-of-type)  */
 #bottoms .categories-title,
 #shoes .categories-title,
 #accessories .categories-title {
-  margin-top: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .product-grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  row-gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    row-gap: 1rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 1rem;
+}
+
+#accessories-grid {
+    border-bottom: none;
 }
 
 .product-card {
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  text-align: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
 }
 
 .product-card img {
-  width: 196px;
-  height: 246px;
-  border-radius: 0.25rem;
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
 }
 
 .product-card .name,
 .product-card .price {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
 .product-card .name {
-  text-align: left;
-  font-size: 1rem;
-  font-family: 'garamond-premier-pro';
-  margin: 0.5rem 0 0.25rem;
-  font-weight: 500;
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'garamond-premier-pro', 'Poppins', sans-serif;
+    margin: 0.5rem 0 0.25rem;
+    font-weight: 500;
 }
 
 .product-card .price {
-  font-family: 'DS Trade Gothic';
-  text-align: left;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  margin-top: 0.5rem;
+    font-family: 'DS Trade Gothic', 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
 }
 
 .product-card .desc {
-  text-align: left;
-  font-size: 0.8rem;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+/*-------------------- Media Queries --------------------*/
+/* For tablet */
+@media screen and (min-width: 768px) {
+    .categories {
+        padding: 0 1rem;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+    }
 }
