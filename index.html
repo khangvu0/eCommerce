@@ -70,12 +70,23 @@
         </main>
         <!------------------- FOOTER ------------------->
         <footer class="footer">
-            <div class="footer-container">
-                <div>
-                    <h1 class="footer-title">KHNG</h1>
-                    <span class="footer-subtitle">Rated A+ in style.</span>
-                </div>
-            </div>
+            <section class="sign-up">
+                <form onsubmit="validate(event)" id="footer-form">
+                    <div class="footer-form_intro">
+                        <h3>Sign-Up for Texts</h3>
+                        <p>Sign up to receive KHNG texts and get first dibs on new arrivals, sales, exclusive content, events and more!</p>
+                    </div>
+
+                    <div class="footer-form_input">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone">
+                        <div id="error-phone"></div>
+                    </div>
+
+                    <input type="submit" class="btn" value="Submit">
+                    <p class="footer-form_disclaimer">By entering your phone number, you agree to receive KHNG offers, promotions, other commercial messages. You can view our Privacy Policy here and you may unsubscribe at any time.</p>
+                </form>
+            </section>
         </footer>
     </body>
 </html>
