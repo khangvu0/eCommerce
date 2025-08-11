@@ -1,0 +1,34 @@
+.hero,
+.promo {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/*-------------------- Hero --------------------*/
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero-text-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*-------------------- Promo --------------------*/
+.promo-image {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.promo-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
