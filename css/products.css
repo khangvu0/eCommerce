@@ -74,3 +74,9 @@
         grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+    }
+}
