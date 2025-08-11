@@ -25,7 +25,6 @@ function createProductCard(product) {
     <a href="pages/detail.html?id=${product.id}">
       <img src="${product.image}" alt="${product.name}" />
       <h3 class="name">${product.name}</h3>
-      <p class="price">$${product.price.toFixed(2)}</p>
     </a>
   `;
   return card;
