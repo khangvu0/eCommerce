@@ -1,5 +1,5 @@
 'use strict';
-
+// Best Seller Product Rendering
 document.addEventListener("DOMContentLoaded", () => {
   fetch("products.json")
     .then(res => res.json())
@@ -28,4 +28,44 @@ function createProductCard(product) {
     </a>
   `;
   return card;
+}
+
+// Footer Form Validation
+function validate(event){
+    event.preventDefault(); 
+    document.querySelectorAll('.donation--error').forEach(div => div.textContent = '');
+
+    const form = document.getElementById('footer-form');
+    const phone = document.getElementById('phone');
+    const phoneRegex = /^(?:\(\d{3}\)[\s\-\.]?|\d{3}[\s\-\.]?)\d{3}[\s\-\.]?\d{4}$/;
+
+    // Validation result variables
+    let valid = true;
+
+    // Validate fields
+    if (!phoneRegex.test(phone.value)) {
+        valid = false;
+        showError('phone', 'Please enter a valid phone number.');
+        phone.classList.remove('input-valid');
+        phone.classList.add('input-invalid');
+    } else {
+        phone.classList.remove('input-invalid');
+        phone.classList.add('input-valid');
+    }
+
+    if (valid) { 
+        alert('Form submitted successfully'); 
+        document.getElementById('form').reset();
+
+        // Remove green/valid css styling
+        phone.classList.remove('input-valid');
+    }
+}
+
+// Error function - passes in id from validate function and spits out corresponding message
+function showError(id, message) {
+    const errorDiv = document.getElementById('phone-error');
+    if (errorDiv) {
+        errorDiv.textContent = message;
+    }
 }
