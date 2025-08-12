@@ -1,4 +1,5 @@
 'use strict';
+
 // Best Seller Product Rendering
 document.addEventListener("DOMContentLoaded", () => {
   fetch("products.json")
@@ -33,16 +34,14 @@ function createProductCard(product) {
 // Footer Form Validation
 function validate(event){
     event.preventDefault(); 
-    document.querySelectorAll('.donation--error').forEach(div => div.textContent = '');
+    document.querySelectorAll('.footer--error').forEach(div => div.textContent = '');
 
     const form = document.getElementById('footer-form');
     const phone = document.getElementById('phone');
     const phoneRegex = /^(?:\(\d{3}\)[\s\-\.]?|\d{3}[\s\-\.]?)\d{3}[\s\-\.]?\d{4}$/;
 
-    // Validation result variables
     let valid = true;
 
-    // Validate fields
     if (!phoneRegex.test(phone.value)) {
         valid = false;
         showError('phone', 'Please enter a valid phone number.');
@@ -56,9 +55,12 @@ function validate(event){
     if (valid) { 
         alert('Form submitted successfully'); 
         document.getElementById('form').reset();
-
-        // Remove green/valid css styling
         phone.classList.remove('input-valid');
+
+        const errorDiv = document.getElementById('phone-error');
+        if (errorDiv) {
+            errorDiv.remove();
+        }
     }
 }
 
