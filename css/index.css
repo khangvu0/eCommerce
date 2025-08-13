@@ -24,6 +24,10 @@
     height: 500px;
     object-fit: cover;
 }
+
+.hero-title {
+    font-size: 2rem;
+}
 /*-------------------- Best Sellers --------------------*/
 .best-sellers h2 {
     text-align: center;
