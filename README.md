@@ -16,6 +16,7 @@ You can view a live demo of the website [here](https://e-commerce-neon-xi-35.ver
 ## Features
 
 - Dynamic Product Rendering – Loads product name, price, description, and image from a JSON file without hardcoding into HTML
+- Detail Page - Dynamic page that loads individual JSON product depending on user product selection
 - Hero Section – Prominent image banner on the home page to highlight brand and offerings
 - Responsive Grid Layout – Dynamically adapts to mobile, tablet, and desktop using CSS Grid and media queries
 - Contact Form – Allows users to submit inquiries with fields for name, email, and message
@@ -29,6 +30,7 @@ You can view a live demo of the website [here](https://e-commerce-neon-xi-35.ver
 During this project, I gained hands-on experience with:
 - window.location.href – Grabbing the current URL
 - Parsing JSON – Fetching and iterating through product data to render HTML content dynamically
+- Selective JSON Parsing - Fetching individual JSON product data for various sections
 - Installing Node.js – Setting up a local development environment for running modern JS features
 - Command Line Control – Using Control + C to stop processes and regain terminal control
 - Overlaying Text on Images – Positioning text and HTML elements above background images
