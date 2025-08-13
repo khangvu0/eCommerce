@@ -50,8 +50,9 @@ a {
 /*-------------------- Header --------------------*/
 .header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     max-width: 1800px;
+    left: 0;
     top: 0;
     z-index: 100;
     background-color: var(--body-color);
@@ -286,5 +287,12 @@ a {
 
     .footer-form_disclaimer {
         padding: 0 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .header {
+        position: sticky;
+        margin: 0 auto;
     }
 }
