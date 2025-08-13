@@ -28,6 +28,10 @@ h2, h3 {
     gap: 1rem;
 }
 
+.form-row div{
+    width: 100%;
+}
+
 .form-row label {
     margin-bottom: 0.5rem;
 }
