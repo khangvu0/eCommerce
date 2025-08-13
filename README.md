@@ -27,7 +27,7 @@ You can view a live demo of the website [here](https://e-commerce-neon-xi-35.ver
 ## Lessons Learned
 
 During this project, I gained hands-on experience with:
-- window.location.href – Navigating between pages programmatically
+- window.location.href – Grabbing the current URL
 - Parsing JSON – Fetching and iterating through product data to render HTML content dynamically
 - Installing Node.js – Setting up a local development environment for running modern JS features
 - Command Line Control – Using Control + C to stop processes and regain terminal control
