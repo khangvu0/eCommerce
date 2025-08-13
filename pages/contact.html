@@ -98,12 +98,62 @@
 
         <!------------------- FOOTER ------------------->
         <footer class="footer">
-            <div class="footer-container">
-                <div>
-                    <h1 class="footer-title">KHNG</h1>
-                    <span class="footer-subtitle">Rated A+ in style.</span>
+            <section class="sign-up">
+                <form onsubmit="validate(event)" class="footer-form" id="form">
+                    <div class="laptop-display">
+                        <div class="footer-form_intro">
+                            <h3>Sign-Up for Texts</h3>
+                            <p>Sign up to receive KHNG texts and get first dibs on new arrivals, sales, exclusive content, events and more!</p>
+                        </div>
+
+                        <div class="footer-form_input-container">
+                            <div class="footer-form_input">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" id="phone" name="phone" required />
+                                <div class="footer-error" id="phone-error"></div>
+                            </div>
+                            <div class="footer-form_input">
+                                <input type="submit" class="btn" value="Submit" required>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-form_disclaimer">By entering your phone number, you agree to receive KHNG offers, promotions, other commercial messages. You can view our Privacy Policy here and you may unsubscribe at any time.</p>
+                </form>
+            </section>
+
+            <section class="socials">
+                <div class="app-store">
+                    <a href="https://www.facebook.com/khang.vu.7545" target="_blank">
+                        <img src="/images/apple-app.svg" alt="Apple store app download">
+                    </a>
+                    <a href="https://www.instagram.com/khangvu_/" target="_blank">
+                        <img src="/images/google-app.svg" alt="Google store app download">
+                    </a>
                 </div>
-            </div>
+                
+                <div class="social-media">
+                    <a href="#" target="_blank" class="footer-social">
+                        <img src="images/instagram.svg" alt="Instagram logo">
+                    </a>
+                    <a href="#" target="_blank" class="footer-social">
+                        <img src="images/facebook.svg" alt="Facebook logo">
+                    </a>
+                    <a href="#" target="_blank" class="footer-social">
+                        <img src="images/tiktok.svg" alt="Tiktok logo">
+                    </a>
+                    <a href="#" target="_blank" class="footer-social">
+                        <img src="images/pinterest.svg" alt="Pinterest logo">
+                    </a>
+                    <a href="#" target="_blank" class="footer-social">
+                        <img src="images/youtube.svg" alt="Youtube logo">
+                    </a>
+                </div>
+            </section>
+
+            <section class="copyright">
+                <p>&copy; 2025 Khang Vu Ecommerce Project. All Rights Reserved. This project is intended for educational purposes only.</p>
+                <p>Icons made by Icon Mafia, Pixel Icons, Enamo Studios</p>
+            </section>
         </footer>
     </body>
 </html>
