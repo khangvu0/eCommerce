@@ -1,6 +1,6 @@
 # eCommerce
 
-A fully responsive, accessible, and visually engaging eCommerce website, selling trendy mens apparel and accessories. This project demonstrates pulling product data dynamically from a JSON file, clean semantic HTML structure, responsive design, and multi-page navigation.
+A fully responsive, accessible, and visually engaging eCommerce website, selling trendy apparel and accessories. This project demonstrates pulling product data dynamically from a JSON file, clean semantic HTML structure, responsive design, and multi-page navigation.
 
 ## Live Demo
 
