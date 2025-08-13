@@ -9,6 +9,10 @@
     --body-color: #ffffff;
     --card-color: #f5f3ef;
     --footer-color: #f6f6f6;
+
+    --font-logo: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+    --font-title: 'garamond-premier-pro', 'Poppins', sans-serif;
+    --font-text: 'DS Trade Gothic', 'Poppins', sans-serif;
 }
 
 /*-------------------- Base CSS Rules --------------------*/
@@ -16,7 +20,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-text)
 }
 
 html,
@@ -64,7 +68,7 @@ a {
 
 .nav_logo {
     color: var(--title-color);
-    font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: var(--font-logo);
     letter-spacing: 4px;
 }
 
@@ -81,6 +85,7 @@ a {
     align-items: center;
     font-size: 0.9rem;
     color: var(--title-color);
+    font-family: var(--font-text);
 }
 
 .nav_link:hover {
@@ -175,6 +180,7 @@ a {
 .footer-form_input label {
     font-size: 0.8rem;
     font-weight: bold;
+    margin: 1rem 0 0.25rem;
 }
 
 .footer-form_input #phone {
@@ -253,7 +259,7 @@ a {
     .footer-form .btn {
         padding: 0.5rem 1.5rem;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 }
 

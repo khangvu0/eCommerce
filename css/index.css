@@ -12,21 +12,25 @@
 }
 
 /*-------------------- Hero --------------------*/
-.hero-image {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
 .hero-text-container {
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
 /*-------------------- Best Sellers --------------------*/
 .best-sellers h2 {
     text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-title);
 }
 
 .best-sellers-div {
@@ -45,23 +49,24 @@
 .product-card img {
     width: 100%;
     height: auto;
+    min-height: 244px;
     border-radius: 0.25rem;
 }
 
-.product-card .name,
-.product-card .price {
-    color: var(--main-color);
-}
-
 .product-card .name {
+    color: var(--main-color);
     text-align: center;
-    font-size: 0.7rem;
-    font-family: 'garamond-premier-pro', 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-family: var(--font-title);
     margin: 0.5rem 0 0.25rem;
     font-weight: 400;
 }
 
 /*-------------------- Promo --------------------*/
+.promo {
+    margin-bottom: 1rem;
+}
+
 .promo-image {
     width: 100%;
     height: 170px;
@@ -73,4 +78,71 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.promo-title {
+    letter-spacing: 0.2rem;
+}
+
+.promo-subtitle {
+    color: var(--main-color);
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.promo-subtitle:hover {
+  background-color: var(--footer-color);
+}
+
+/*-------------------- Media Queries --------------------*/
+/* For tablet */
+@media screen and (min-width: 768px) {
+    .product-card img {
+        padding: 0 2rem;
+    }
+
+    .product-card .name {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    .hero-image {
+        height: 750px;
+    }
+
+    .hero-text-container {
+        top: 14%;
+    }
+
+    .hero-text-container h1 {
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .hero-text-container p {
+        font-size: 2;
+        letter-spacing: 0.1rem;
+    }
+
+    .best-sellers-div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .product-card img {
+        padding: unset;
+        min-height: unset;
+    }
+
+    .promo-image {
+        height: 250px;
+    }
 }
