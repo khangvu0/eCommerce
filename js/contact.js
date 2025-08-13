@@ -116,7 +116,7 @@ function validate(event){
 
     if (valid) { 
         alert('Form submitted successfully'); 
-        document.getElementById('form').reset();
+        document.getElementById('footer-form').reset();
         phone.classList.remove('input-valid');
 
         const errorDiv = document.getElementById('phone-error');
