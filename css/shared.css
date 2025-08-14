@@ -26,7 +26,6 @@
 html,
 body {
     max-width: 1800px;
-    margin: 0 auto;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -280,7 +279,7 @@ a {
 
     .footer-form_intro,
     .footer-form_input-container {
-        padding: 0 1.5rem;
+        /* padding: 0 1.5rem; */
         width: 100%;
         margin-bottom: 0.5rem;
     }
@@ -291,6 +290,9 @@ a {
 }
 
 @media screen and (min-width: 1800px) {
+    html {
+        margin: 0 auto;
+    }
     .header {
         position: sticky;
         margin: 0 auto;
