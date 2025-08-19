@@ -283,10 +283,6 @@ a {
         width: 100%;
         margin-bottom: 0.5rem;
     }
-
-    .footer-form_disclaimer {
-        padding: 0 1.5rem;
-    }
 }
 
 @media screen and (min-width: 1800px) {
