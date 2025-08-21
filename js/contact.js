@@ -94,7 +94,7 @@ function showError(id, message) {
 }
 
 // Footer Form Validation
-function validate(event){
+function validateFooter(event){
     event.preventDefault(); 
     document.querySelectorAll('.footer--error').forEach(div => div.textContent = '');
 
@@ -106,7 +106,7 @@ function validate(event){
 
     if (!phoneRegex.test(phone.value)) {
         valid = false;
-        showError('phone', 'Please enter a valid phone number.');
+        showErrorFooter('phone', 'Please enter a valid phone number.');
         phone.classList.remove('input-valid');
         phone.classList.add('input-invalid');
     } else {
@@ -127,7 +127,7 @@ function validate(event){
 }
 
 // Error function - passes in id from validate function and spits out corresponding message
-function showError(id, message) {
+function showErrorFooter(id, message) {
     const errorDiv = document.getElementById('phone-error');
     if (errorDiv) {
         errorDiv.textContent = message;
