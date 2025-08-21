@@ -94,7 +94,6 @@ label {
 .contact-error {
     color: red;
     padding: 0.5rem 0;
-    font-weight: bold;
 }  
 
 .input-valid {
