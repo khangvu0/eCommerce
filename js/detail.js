@@ -13,13 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Grabbing the element that matches the id
         .then((products) => {
             const id = getURLId();
-            //     var result;
-            //     result = products.find((element) => {
-            //         return element.id == id;
-            //     })
-            //     console.log(result);
-            // })
             const result = products.find((element) => element.id == id);
+
             if (result) {
                 const productElement = createProductPage(result);
                 main.appendChild(productElement);
@@ -27,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 });
 
-// Helper function that takes product object as input and returns div element styled as a product card
+// Helper function that takes product object as input and returns div element styled as a product page
 function createProductPage(product) {
     const container = document.createElement('div');
     container.className = 'product-detail';
@@ -36,7 +31,9 @@ function createProductPage(product) {
     document.title = 'KHNG | ' + product.name;
 
     container.innerHTML = `
-        <img src="../${product.image}" alt="${product.name}" class="product-image" />
+        <img src="../${product.image}" alt="${
+        product.name
+    }" class="product-image" />
         <div class="product-info">
             <h1 class="product-name">${product.name}</h1>
             <p class="product-price">$${product.price.toFixed(2)}</p>
@@ -63,30 +60,19 @@ function getURLId() {
     return id;
 }
 
-function addToCart(product) {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-    // Check if product already exists in cart
-    const existing = cart.find((item) => item.id === product.id);
-    if (existing) {
-        existing.quantity += 1;
-    } else {
-        product.quantity = 1;
-        cart.push(product);
-    }
-
-    localStorage.setItem('cart', JSON.stringify(cart));
-    alert(`${product.name} added to cart!`);
-}
+function addToCart(product) {}
 
 // Footer Form Validation
-function validate(event){
-    event.preventDefault(); 
-    document.querySelectorAll('.footer--error').forEach(div => div.textContent = '');
+function validate(event) {
+    event.preventDefault();
+    document
+        .querySelectorAll('.footer--error')
+        .forEach((div) => (div.textContent = ''));
 
     const form = document.getElementById('footer-form');
     const phone = document.getElementById('phone');
-    const phoneRegex = /^(?:\(\d{3}\)[\s\-\.]?|\d{3}[\s\-\.]?)\d{3}[\s\-\.]?\d{4}$/;
+    const phoneRegex =
+        /^(?:\(\d{3}\)[\s\-\.]?|\d{3}[\s\-\.]?)\d{3}[\s\-\.]?\d{4}$/;
 
     let valid = true;
 
@@ -100,8 +86,8 @@ function validate(event){
         phone.classList.add('input-valid');
     }
 
-    if (valid) { 
-        alert('Form submitted successfully'); 
+    if (valid) {
+        alert('Form submitted successfully');
         document.getElementById('form').reset();
         phone.classList.remove('input-valid');
 
