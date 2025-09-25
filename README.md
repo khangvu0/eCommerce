@@ -20,7 +20,7 @@ You can view a live demo of the website [here](https://e-commerce-neon-xi-35.ver
 -   Hero Section – Prominent image banner on the home page to highlight brand and offerings
 -   Responsive Grid Layout – Dynamically adapts to mobile, tablet, and desktop using CSS Grid and media queries
 -   Contact Form – Allows users to submit inquiries with fields for name, email, and message
--   Internal Page Linking – Smooth navigation to specific sections within a page
+-   Products Page Linking – Smooth navigation to specific sections of the products page
 -   Footer with a Form and Social Media Links – Text sign up and links to brand profiles
 -   Icons Integration – Visual enhancements for buttons, contact info, and navigation
 -   Accessibility Compliance – WCAG 2.0 AA-friendly design and semantic HTML for screen readers
