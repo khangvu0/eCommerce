@@ -33,7 +33,6 @@ body {
 
 body {
     position: relative;
-    top: 3rem;
     background-color: var(--body-color);
     color: var(--text-color);
 }
@@ -48,7 +47,7 @@ a {
 
 /*-------------------- Header --------------------*/
 .header {
-    position: fixed;
+    position: sticky;
     width: 100vw;
     max-width: 1800px;
     left: 0;
@@ -291,10 +290,6 @@ a {
 @media screen and (min-width: 1800px) {
     html {
         margin: 0 auto;
-    }
-
-    body {
-        top: 0;
     }
 
     .header {
