@@ -4,7 +4,7 @@
 /*-------------------- Color Variables --------------------*/
 :root {
     --main-color: #253746;
-    --secondary-color: #38546B;
+    --secondary-color: #38546b;
     --text-color: #333333;
     --body-color: #ffffff;
     --card-color: #f5f3ef;
@@ -20,7 +20,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--font-text)
+    font-family: var(--font-text);
 }
 
 html,
@@ -132,7 +132,7 @@ a {
 
 /* Hover arrow indicator */
 .dropdown_item::after {
-    content: "→";
+    content: '→';
     float: right;
     color: var(--main-color);
     opacity: 0;
@@ -205,7 +205,7 @@ a {
     color: red;
     padding-top: 0.5rem;
     font-size: 0.9rem;
-}  
+}
 
 .input-valid {
     border: 1px solid green;
@@ -279,9 +279,12 @@ a {
 
     .footer-form_intro,
     .footer-form_input-container {
-        /* padding: 0 1.5rem; */
         width: 100%;
         margin-bottom: 0.5rem;
+    }
+
+    .app-store {
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -289,6 +292,11 @@ a {
     html {
         margin: 0 auto;
     }
+
+    body {
+        top: 0;
+    }
+
     .header {
         position: sticky;
         margin: 0 auto;
