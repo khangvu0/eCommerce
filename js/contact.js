@@ -1,11 +1,13 @@
 // Validation function
-function validate(event){
+function validate(event) {
     // Prevent form submission to handle validation first
-    event.preventDefault(); 
+    event.preventDefault();
 
     // Clears up previous error messages
     // For each div in the loop, set text content to null
-    document.querySelectorAll('.contact-error').forEach(div => div.textContent = '');
+    document
+        .querySelectorAll('.contact-error')
+        .forEach((div) => (div.textContent = ''));
 
     // Form value variables
     const firstName = document.getElementById('first-name');
@@ -54,7 +56,10 @@ function validate(event){
 
     if (!nameRegex.test(message.value)) {
         valid = false;
-        showError('message', 'Please enter a valid message (More than 2 letters).');
+        showError(
+            'message',
+            'Please enter a valid message (More than 2 letters).'
+        );
         message.classList.remove('input-valid');
         message.classList.add('input-invalid');
     } else {
@@ -72,14 +77,14 @@ function validate(event){
         country.classList.add('input-valid');
     }
 
-
-    if (valid) { 
-        alert('Form submitted successfully'); 
-        document.getElementById('form').reset();    // Resets form
+    if (valid) {
+        alert('Form submitted successfully');
+        document.getElementById('form').reset(); // Resets form
 
         // Remove green/valid css styling
         firstName.classList.remove('input-valid');
         lastName.classList.remove('input-valid');
+        message.classList.remove('input-valid');
         email.classList.remove('input-valid');
         country.classList.remove('input-valid');
     }
@@ -94,13 +99,16 @@ function showError(id, message) {
 }
 
 // Footer Form Validation
-function validateFooter(event){
-    event.preventDefault(); 
-    document.querySelectorAll('.footer--error').forEach(div => div.textContent = '');
+function validateFooter(event) {
+    event.preventDefault();
+    document
+        .querySelectorAll('.footer--error')
+        .forEach((div) => (div.textContent = ''));
 
     const form = document.getElementById('footer-form');
     const phone = document.getElementById('phone');
-    const phoneRegex = /^(?:\(\d{3}\)[\s\-\.]?|\d{3}[\s\-\.]?)\d{3}[\s\-\.]?\d{4}$/;
+    const phoneRegex =
+        /^(?:\(\d{3}\)[\s\-\.]?|\d{3}[\s\-\.]?)\d{3}[\s\-\.]?\d{4}$/;
 
     let valid = true;
 
@@ -114,8 +122,8 @@ function validateFooter(event){
         phone.classList.add('input-valid');
     }
 
-    if (valid) { 
-        alert('Form submitted successfully'); 
+    if (valid) {
+        alert('Form submitted successfully');
         document.getElementById('footer-form').reset();
         phone.classList.remove('input-valid');
 
