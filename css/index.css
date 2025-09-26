@@ -92,15 +92,16 @@
     color: var(--main-color);
     background-color: white;
     font-size: 1.2rem;
-    padding: 10px 20px; 
-    border: none; 
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .promo-subtitle:hover {
-  background-color: var(--footer-color);
+    transform: scale(1.02);
+    background-color: var(--card-color);
 }
 
 /*-------------------- Media Queries --------------------*/

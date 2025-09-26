@@ -210,6 +210,11 @@ a {
     margin-top: 0.25rem;
 }
 
+.footer-form .btn:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
 #phone-error {
     color: red;
     padding-top: 0.5rem;
